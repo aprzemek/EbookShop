@@ -4,22 +4,22 @@
             v-if="showFailureMessage"
             class="bg-danger text-white text-center p-2"
         >
-            Authentication failed, please try again.
+            Błędne dane, spróbuj ponownie!
         </h4>
 
         <div class="form-group">
-            <label for="">Username</label>
+            <label for="">Nazwa użytkownika</label>
             <input type="text" class="form-control" v-model="username" />
         </div>
 
         <div class="form-group">
-            <label for="">Password</label>
+            <label for="">Hasło</label>
             <input type="password" class="form-control" v-model="password" />
         </div>
 
         <div class="text-center">
             <button class="btn btn-primary m-1" @click="handleAuth">
-                Log in
+                Zaloguj
             </button>
         </div>
     </div>

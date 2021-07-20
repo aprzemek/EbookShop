@@ -1,23 +1,23 @@
 <template>
     <div>
         <h2 class="text-center p-2">
-            {{ editMode ? "Edit Product" : "Add Product" }}
+            {{ editMode ? "Edytuj produkt" : "Dodaj produkt" }}
         </h2>
 
         <h4
             v-if="$v.$invalid && $v.$dirty"
             class="bg-danger text-white text-center p-2"
         >
-            Values Required for All Fields!
+            Wypełnij wszystkie pola!
         </h4>
 
         <div class="form-group">
-            <label for="">Name</label>
+            <label for="">Nazwa</label>
             <input type="text" class="form-control" v-model="product.name" />
         </div>
 
         <div class="form-group">
-            <label for="">Description</label>
+            <label for="">Opis</label>
             <textarea
                 class="form-control"
                 v-model="product.description"
@@ -25,24 +25,24 @@
         </div>
 
         <div class="form-group">
-            <label for="">Price</label>
+            <label for="">Cena</label>
             <input type="text" class="form-control" v-model="product.price" />
         </div>
 
         <div class="form-group">
-            <label for="">Image</label>
+            <label for="">Zdjęcie</label>
             <input type="file" class="form-control" @change="onFileSelected" />
 
             <p v-if="editMode" class="mt-3">
-                Current Image:
+                Aktualne zdjęcie:
                 <img :src="productImages + product.image" width="100" />
             </p>
         </div>
 
         <div class="form-group">
-            <label for="">Category</label>
+            <label for="">Kategoria</label>
             <select class="form-control" @change="onChange">
-                <option :value="null">Choose a category</option>
+                <option :value="null">Wybierz kategorię</option>
                 <option
                     v-for="(c, i) in categories"
                     :key="i"
@@ -56,10 +56,10 @@
 
         <div class="text-center">
             <router-link to="/admin/products" class="btn btn-secondary m-1"
-                >Cancel</router-link
+                >Anuluj</router-link
             >
             <button class="btn btn-primary m-1" @click="handleProduct">
-                {{ editMode ? "Edit" : "Add" }}
+                {{ editMode ? "Zapisz" : "Dodaj" }}
             </button>
         </div>
     </div>

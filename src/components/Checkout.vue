@@ -3,7 +3,7 @@
         <div class="col-12">
             <div class="m-2">
                 <div class="form-group m-2">
-                    <label for="">Name</label>
+                    <label for="">Imię i nazwisko</label>
                     <input
                         type="text"
                         class="form-control"
@@ -21,7 +21,7 @@
                     <validation-error :validation="$v.order.email" />
                 </div>
                 <div class="form-group m-2">
-                    <label for="">Address</label>
+                    <label for="">Adres</label>
                     <input
                         type="text"
                         class="form-control"
@@ -34,15 +34,14 @@
 
         <div class="col-12 text-center">
             <router-link to="/cart" class="btn btn-secondary m-1"
-                >Back</router-link
+                >Powrót</router-link
             >
-            <button class="btn btn-primary m-1" @click="submitOrder">Place Order</button>
+            <button class="btn btn-primary m-1" @click="submitOrder">Zamów!</button>
         </div>
     </div>
 </template>
 
 <script>
-// import { mapState, mapGetters, mapMutations, mapActions } from "vuex";
 import ValidationError from "./ValidationError";
 import { required, email } from "vuelidate/lib/validators";
 import { mapState, mapGetters, mapActions } from 'vuex';
@@ -54,9 +53,9 @@ export default {
     data() {
         return {
             order: {
-                name: "John",
-                email: "john@gmail.com",
-                address: "John Street",
+                name: "",
+                email: "",
+                address: "",
             },
         };
     },

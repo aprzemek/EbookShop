@@ -1,16 +1,16 @@
 <template>
     <div>
-        <h2>Orders</h2>
+        <h2>Zamówienia</h2>
 
         <table class="table">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
+                    <th>Imię</th>
                     <th>E-mail</th>
-                    <th>Address</th>
-                    <th>Order Content</th>
-                    <th>Total</th>
+                    <th>Adres</th>
+                    <th>Zamówione Produkty</th>
+                    <th>Do zapłaty</th>
                 </tr>
             </thead>
             <tbody>

@@ -19,9 +19,9 @@ export default {
 
             if (this.validation.$dirty) {
                 if (this.hasValidationError("required")) {
-                    messages.push("Please enter a value.");
+                    messages.push("Podaj poprawne dane.");
                 } else if (this.hasValidationError("email")) {
-                    messages.push("Please enter a valid email.");
+                    messages.push("Podaj poprawny adres e-mail.");
                 }
             }
 

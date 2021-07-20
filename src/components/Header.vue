@@ -1,6 +1,8 @@
 <template>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <router-link class="navbar-brand" to="/">CMS ShoppingCart</router-link>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-success">
+        <router-link class="navbar-brand" to="/categories/all"><b>&nbsp;&nbsp;E-BOOKS IT</b></router-link>
+        
         <button
             class="navbar-toggler"
             type="button"

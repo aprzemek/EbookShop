@@ -6,7 +6,7 @@
                 v-if="currentPage != 1"
                 @click="getProducts(currentPage - 1)"
             >
-                <button class="btn btn-secondary mx-1">Previous</button>
+                <button class="btn btn-secondary mx-1">Poprzednia</button>
             </li>
             <li
                 class="page-item"
@@ -28,7 +28,7 @@
                 v-if="currentPage != pageCount"
                 @click="getProducts(currentPage + 1)"
             >
-                <button class="btn btn-secondary mx-1">Next</button>
+                <button class="btn btn-secondary mx-1">Dalej</button>
             </li>
         </ul>
     </nav>

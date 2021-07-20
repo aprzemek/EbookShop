@@ -1,18 +1,23 @@
 <template>
     <div class="float-right text-white">
         <span v-if="itemCount > 0">
-            {{ itemCount }} item(s) {{ totalPrice | currency }}
+            {{ itemCount }} e-book(i) {{ totalPrice | currency }}
         </span>
         <span v-else>
-            Your cart is empty.
+            Dodaj coś do koszyka!
+           
         </span>
+        &nbsp;
         <router-link
             to="/cart"
-            class="btn btn-sm btn-dark text-white"
+            class="btn btn-sm btn-warning text-danger"
             v-if="itemCount > 0"
+            
         >
             <i class="fa fa-shopping-cart"></i>
+            
         </router-link>
+        &nbsp;
     </div>
 </template>
 

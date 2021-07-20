@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-const ordersUrl = "https://localhost:44304/api/orders";
+const ordersUrl = "https://localhost:5001/api/orders";
 
 export default {
     namespaced: true,

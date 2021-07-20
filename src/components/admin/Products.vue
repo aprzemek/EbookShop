@@ -1,19 +1,19 @@
 <template>
     <div>
-        <h2>Products</h2>
+        <h2>Produkty</h2>
 
         <router-link to="/admin/products/add" class="btn btn-primary mb-4"
-            >Add Product</router-link
+            >Dodaj kolejny produkt</router-link
         >
 
         <table class="table">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Image</th>
-                    <th>Price</th>
-                    <th>Category</th>
-                    <th>Actions</th>
+                    <th>Nazwa</th>
+                    <th>Zdjęcie</th>
+                    <th>Cena</th>
+                    <th>Kategoria</th>
+                    <th>Akcje</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,13 +29,13 @@
                             class="btn btn-sm btn-secondary mx-2"
                             @click="handleEdit(p)"
                         >
-                            Edit
+                            Edycja
                         </button>
                         <button
                             class="btn btn-sm btn-danger mx-2"
                             @click="deleteProduct(p)"
                         >
-                            Delete
+                            Usuń
                         </button>
                     </td>
                 </tr>

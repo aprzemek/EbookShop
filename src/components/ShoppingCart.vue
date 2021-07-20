@@ -3,22 +3,22 @@
         <CategoryList />
 
         <div class="col-9">
-            <h2 class="display-4">Your cart</h2>
+            <h2 class="display-4">Twój koszyk</h2>
 
-            <table class="table table-bordered">
+            <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Product</th>
-                        <th>Quantity</th>
-                        <th>Actions</th>
-                        <th>Price</th>
-                        <th>Subtotal</th>
+                        <th>Produkt</th>
+                        <th>Ilość</th>
+                        <th>Akcje</th>
+                        <th>Cena</th>
+                        <th>Suma</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr v-if="itemCount == 0">
                         <td colspan="5" class="text-center">
-                            Your cart is empty.
+                            Twój koszyk jest pusty.
                         </td>
                     </tr>
                     <tr v-else v-for="(c, i) in cart" :key="i">
@@ -51,7 +51,7 @@
                 <tfoot v-if="itemCount > 0">
                     <tr>
                         <td colspan="5" class="text-right">
-                            <h4>Total: {{ totalPrice | currency }}</h4>
+                            <h4>Łącznie do zapłaty: {{ totalPrice | currency }}</h4>
                         </td>
                     </tr>
                     <tr>
@@ -60,12 +60,12 @@
                                 class="btn btn-danger float-left"
                                 @click="handleClearCart"
                             >
-                                Clear Cart
+                                Opróźnij koszyk
                             </button>
                             <router-link
                                 to="/checkout"
                                 class="btn btn-primary float-right"
-                                >Checkout</router-link
+                                >Dalej</router-link
                             >
                         </td>
                     </tr>

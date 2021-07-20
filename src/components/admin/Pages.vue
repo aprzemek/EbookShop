@@ -1,17 +1,17 @@
 <template>
     <div>
-        <h2>Pages</h2>
+        <h2>Strony</h2>
 
         <router-link to="/admin/pages/add" class="btn btn-primary mb-4"
-            >Add Page</router-link
+            >Dodaj stronę</router-link
         >
 
         <table class="table">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Slug</th>
-                    <th>Actions</th>
+                    <th>Nazwa</th>
+                    <th>URL</th>
+                    <th>Akcje</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,13 +23,13 @@
                             class="btn btn-sm btn-secondary mx-2"
                             @click="handleEdit(p)"
                         >
-                            Edit
+                            Edycja
                         </button>
                         <button
                             class="btn btn-sm btn-danger mx-2"
                             @click="deletePage(p)"
                         >
-                            Delete
+                            Usuń
                         </button>
                     </td>
                 </tr>
@@ -54,3 +54,4 @@ export default {
     }
 };
 </script>
+

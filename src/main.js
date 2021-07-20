@@ -18,7 +18,7 @@ Vue.use(Vue2Editor);
 Vue.filter("currency", (value) =>
     new Intl.NumberFormat("en-US", {
         style: "currency",
-        currency: "USD",
+        currency: "PLN",
     }).format(value)
 );
 
@@ -27,3 +27,4 @@ new Vue({
     store,
     router,
 }).$mount("#app");
+

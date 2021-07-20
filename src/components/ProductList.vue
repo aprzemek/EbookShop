@@ -4,13 +4,13 @@
 
         <div class="col-9">
             <div class="row">
-                <div class="col-4 mt-3" v-for="(p, i) in products" :key="i">
+                <div class="col-3 mt-3" v-for="(p, i) in products" :key="i">
                     <p>
-                        <img :src="productImages + p.image" class="img-fluid" />
+                        <img :src="productImages + p.image" class="img-thumbnail"/>
                     </p>
-                    <h3>
+                    <h6>
                         {{ p.name }}
-                    </h3>
+                    </h6>
                     <p>
                         {{ p.description }}
                     </p>
@@ -19,10 +19,12 @@
                     </p>
                     <p>
                         <button
+                            
                             class="btn btn-primary"
                             @click="handleAddProduct(p)"
                         >
-                            Add to cart
+                            Dodaj do koszyka
+                            
                         </button>
                     </p>
                 </div>

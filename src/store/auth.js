@@ -1,6 +1,6 @@
 import Axios from "axios";
 
-const loginUrl = "https://localhost:44304/api/auth";
+const loginUrl = "https://localhost:5001/api/auth";
 
 export default {
     namespaced: true,

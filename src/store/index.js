@@ -8,12 +8,12 @@ import AuthModule from "./auth";
 
 Vue.use(Vuex);
 
-const baseUrl = "https://localhost:44304/api";
+const baseUrl = "https://localhost:5001/api";
 
 const pagesUrl = `${baseUrl}/pages`;
 const categoriesUrl = `${baseUrl}/categories`;
 const productsUrl = `${baseUrl}/products`;
-const productImagesUrl = "https://localhost:44304/media/products/";
+const productImagesUrl = "https://localhost:5001/media/products/";
 
 export default new Vuex.Store({
     strict: true,
